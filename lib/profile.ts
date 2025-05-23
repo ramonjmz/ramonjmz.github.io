@@ -2,15 +2,15 @@ import { Profile } from "@/types";
 
 // Mock profile data - in a real app, this would come from a database
 export const profile: Profile = {
-  name: "Alex Morgan",
-  role: "Full Stack Developer",
-  bio: "I'm a passionate full-stack developer with over 5 years of experience building web applications. I specialize in React, Next.js, and Node.js, and I love creating beautiful, functional user experiences.",
-  email: "alex@example.com",
-  avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  name: "Rámon Jiménez",
+  role: "Software Engineer",
+  bio: "I'm Software Engineer & CRM Consultant with 16+ years of experience, specializing in scalable integrations with platforms like SugarCRM and Odoo. I share practical ideas for startups, help launch fast, and focus on acquiring clients from day one.",
+  email: "ramonjmx@gmail.com",
+  avatar: "https://avatars.githubusercontent.com/u/1979671?v=4",
   socialLinks: {
-    twitter: "https://twitter.com/alexmorgan",
-    github: "https://github.com/alexmorgan",
-    linkedin: "https://linkedin.com/in/alexmorgan",
+    twitter: "https://twitter.com/ramonjmz",
+    github: "https://github.com/ramonjmz",
+    linkedin: "https://www.linkedin.com/in/ramonjmz/",
   },
   skills: [
     "React",

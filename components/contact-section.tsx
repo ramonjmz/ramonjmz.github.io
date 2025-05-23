@@ -102,7 +102,7 @@ export function ContactSection({ profile }: ContactSectionProps) {
                 <div>
                   <h3 className="font-medium mb-1">Location</h3>
                   <p className="text-muted-foreground text-sm">
-                    San Francisco, CA
+                    Orizaba, VER. Mexico
                   </p>
                 </div>
               </div>

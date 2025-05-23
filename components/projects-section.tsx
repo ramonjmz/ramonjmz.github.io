@@ -20,7 +20,9 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
   const [visibleProjects, setVisibleProjects] = useState<Project[]>(projects.slice(0, 6));
   
   // Get all unique tags from projects
-  const allTags = [...new Set(projects.flatMap(project => project.tags))];
+  //const allTags = [...new Set(projects.flatMap(project => project.tags))];
+  const allTags = Array.from(new Set(projects.flatMap(project => project.tags)));
+
   
   const filteredProjects = filter
     ? projects.filter(project => project.tags.includes(filter))

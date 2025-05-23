@@ -60,7 +60,7 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
           <div className="space-y-4 mb-8">
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin className="h-4 w-4" />
-              <span>San Francisco, CA</span>
+              <span>Orizaba, VER. México</span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <Mail className="h-4 w-4" />
