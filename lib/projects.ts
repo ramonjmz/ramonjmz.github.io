@@ -4,9 +4,9 @@ import { Project } from "@/types";
 export const projects: Project[] = [
   {
     id: "1",
-    title: "E-commerce Platform",
-    description: "A modern e-commerce platform built with Next.js and Stripe integration.",
-    image: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Portfolio Page",
+    description: "All your web projects in a page, like this one",
+    image: "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     tags: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
     link: "https://example.com/ecommerce",
     github: "https://github.com/example/ecommerce",
