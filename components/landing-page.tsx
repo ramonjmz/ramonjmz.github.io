@@ -34,7 +34,7 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
         className="w-1/3 p-12 flex flex-col"
       >
         <div className="flex justify-between items-center mb-12">
-          <h1 className="font-bold text-xl">Portfolio</h1>
+          {/* <h1 className="font-bold text-xl">Portfolio</h1> */}
           <ThemeToggle />
         </div>
 
