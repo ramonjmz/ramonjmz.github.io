@@ -25,13 +25,13 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
   const featuredProjects = projects.filter((project) => project.featured);
 
   return (
-    <div className="min-h-screen bg-background flex">
+    <div className="min-h-screen bg-background flex sm:flex-col! landing-page-container">
       {/* Left Column - Profile */}
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className="w-1/3 p-12 flex flex-col"
+        className="w-1/3 p-12 flex"
       >
         <div className="flex justify-between items-center mb-12">
           {/* <h1 className="font-bold text-xl">Portfolio</h1> */}
@@ -104,6 +104,16 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
                 <LinkedInIcon className="h-5 w-5" />
               </a>
             )}
+            {profile.socialLinks.instagram && (
+              <a
+                href={profile.socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <LinkedInIcon className="h-5 w-5" />
+              </a>
+            )}
           </div>
 
           <Button size="lg" onClick={() => setIsContactOpen(true)}>
@@ -128,6 +138,13 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
       </motion.div>
 
       <ContactDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
+      <style jsx>{`
+        @media (max-width: 639px) {
+          .landing-page-container {
+            flex-direction: column !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

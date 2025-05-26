@@ -50,6 +50,9 @@ const profileFormSchema = z.object({
   linkedin: z.string().url({
     message: "Please enter a valid URL.",
   }).optional().or(z.literal("")),
+  instagram: z.string().url({
+    message: "Please enter a valid URL.",
+  }).optional().or(z.literal("")),
   skills: z.string(),
 });
 
@@ -68,6 +71,7 @@ export default function AdminProfile() {
     twitter: profile.socialLinks.twitter || "",
     github: profile.socialLinks.github || "",
     linkedin: profile.socialLinks.linkedin || "",
+    instagram: profile.socialLinks.instagram || "",
     skills: profile.skills.join(", "),
   };
 

@@ -18,7 +18,7 @@ export function Footer() {
 
           <div className="flex items-center mt-6 lg:mt-0 space-x-4">
             <Link 
-              href="https://twitter.com" 
+              href="https://x.com" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"

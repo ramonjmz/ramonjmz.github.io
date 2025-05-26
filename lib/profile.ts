@@ -8,9 +8,10 @@ export const profile: Profile = {
   email: "ramonjmx@gmail.com",
   avatar: "https://avatars.githubusercontent.com/u/1979671?v=4",
   socialLinks: {
-    twitter: "https://twitter.com/ramonjmz",
+    twitter: "https://x.com/ramonjmz",
     github: "https://github.com/ramonjmz",
     linkedin: "https://www.linkedin.com/in/ramonjmz/",
+    instagram: "https://www.instagram.com/ramonjmz",
   },
   skills: [
     "React",
