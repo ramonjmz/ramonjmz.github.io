@@ -27,18 +27,21 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
   return (
     <div className="min-h-screen bg-background flex sm:flex-col! landing-page-container">
       {/* Left Column - Profile */}
-      <motion.div
-        initial={{ opacity: 0, x: -20 }}
+     {/* Left Column */}
+     <motion.div
+        initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className="w-1/3 p-12 flex"
+        className="w-full sm:w-1/3 bg-muted/30 p-12 overflow-y-auto"
       >
         <div className="flex justify-between items-center mb-12">
           {/* <h1 className="font-bold text-xl">Portfolio</h1> */}
-          <ThemeToggle />
+        
         </div>
 
         <div className="flex-1 flex flex-col items-start">
+        <ThemeToggle />
+
           <div className="w-48 h-48 rounded-full overflow-hidden mb-8">
             <img
               src={profile.avatar}
@@ -127,11 +130,11 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className="w-3/3 bg-muted/30 p-12 overflow-y-auto"
-      >
+        className="w-full sm:w-2/3 bg-muted/30 px-4 py-8 sm:p-12 overflow-y-auto"
+>
         <h2 className="text-2xl font-bold mb-8">Featured Projects</h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {featuredProjects.map((project) => (
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 projects-grid">
+        {featuredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
@@ -142,6 +145,9 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
         @media (max-width: 639px) {
           .landing-page-container {
             flex-direction: column !important;
+          }
+          .projects-grid {
+            grid-template-columns: 1fr;
           }
         }
       `}</style>
