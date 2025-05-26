@@ -25,15 +25,15 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
   const featuredProjects = projects.filter((project) => project.featured);
 
   return (
-    <div className="min-h-screen bg-background flex sm:flex-col! landing-page-container">
-      {/* Left Column - Profile */}
+<div className="min-h-screen bg-background flex flex-col sm:flex-row">
+{/* Left Column - Profile */}
      {/* Left Column */}
      <motion.div
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className="w-full sm:w-1/3 bg-muted/30 p-12 overflow-y-auto"
-      >
+        className="w-full sm:w-1/3 p-4 sm:p-12 flex sm:flex-col sm:overflow-y-auto sm:h-screen "
+        >
         <div className="flex justify-between items-center mb-12">
           {/* <h1 className="font-bold text-xl">Portfolio</h1> */}
         
@@ -127,13 +127,13 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
 
       {/* Right Column - Projects */}
       <motion.div
-        initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6 }}
-        className="w-full sm:w-2/3 bg-muted/30 px-4 py-8 sm:p-12 overflow-y-auto"
->
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="w-full sm:w-2/3 bg-muted/30 px-4 py-8 sm:p-12 sm:overflow-y-auto sm:max-h-screen"
+        >
         <h2 className="text-2xl font-bold mb-8">Featured Projects</h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 projects-grid">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {featuredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
@@ -141,16 +141,6 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
       </motion.div>
 
       <ContactDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
-      <style jsx>{`
-        @media (max-width: 639px) {
-          .landing-page-container {
-            flex-direction: column !important;
-          }
-          .projects-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-      `}</style>
     </div>
   );
 }
