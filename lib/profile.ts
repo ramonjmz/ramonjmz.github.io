@@ -4,7 +4,7 @@ import { Profile } from "@/types";
 export const profile: Profile = {
   name: "Rámon Jiménez",
   role: "Software Engineer",
-  bio: "I'm a Software Engineer with over 16 years of experience as a CRM Consultant, specializing in scalable integrations with platforms like SugarCRM and Odoo. I share a portfolio of functional startup projects, including configurations in Odoo, landing pages, and more to help you launch quickly and start acquiring clients from day one.",
+  bio: "With over 16 years of experience, I specialize in building, implementing, and integrating digital systems that help businesses work smarter and grow.",
   email: "ramonjmx@gmail.com",
   avatar: "https://avatars.githubusercontent.com/u/1979671?v=4",
   socialLinks: {
