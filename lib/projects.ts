@@ -8,7 +8,7 @@ export const projects: Project[] = [
     description: "A single page to showcase all your innovative startup ideas and projects.",
     image: "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     tags: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
-    link: "https://example.com/ecommerce",
+    link: "https://portfolio-eta-lake.vercel.app/",
     github: "https://github.com/ramonjmz/portfolio",
     featured: true,
     createdAt: new Date("2023-01-15"),
