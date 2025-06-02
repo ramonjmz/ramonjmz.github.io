@@ -149,7 +149,7 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
           transition={{ duration: 0.6 }}
           className="w-full sm:w-2/3 bg-muted/30 px-4 py-8 sm:p-12 sm:overflow-y-auto sm:max-h-screen"
         >
-        <h2 className="text-2xl font-bold mb-8">Featured Projects</h2>
+        <h2 className="text-2xl font-bold mb-8">Featured Projects & Startup Ideas</h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {featuredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
