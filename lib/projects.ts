@@ -19,7 +19,7 @@ export const projects: Project[] = [
     description: "Discover and play multiplayer games together. Generate a QR code, share it, and scan to join the fun instantly.",
     image: "https://workana.s3.amazonaws.com/portfolios/ua/00dfb5ec4fa649e3202142f69b86a1a6/Screenshot20250602at101039am.png",
     tags: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
-    link: "https://workana.s3.amazonaws.com/portfolios/ua/00dfb5ec4fa649e3202142f69b86a1a6/Screenshot20250602at101039am.png",
+    link: "https://gamehub-psi-taupe.vercel.app/",
     github: "https://github.com/ramonjmz/portfolio",
     featured: true,
     createdAt: new Date("2023-01-15"),
