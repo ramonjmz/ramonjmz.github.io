@@ -30,7 +30,7 @@ export const projects: Project[] = [
     description: "Create personalized digital invites for weddings, birthdays, and more with a sleek, mobile-friendly design.",
     image: "https://workana.s3.amazonaws.com/portfolios/qj/2932b5f51b4411a0d75d24ed6ba0f577/Screenshot20250531at104342pm.png",
     tags: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
-    link: "https://portfolio-eta-lake.vercel.app/",
+    link: "https://invitaciondigital-lake.vercel.app/",
     github: "https://github.com/ramonjmz/portfolio",
     featured: true,
     createdAt: new Date("2023-01-15"),
