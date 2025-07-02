@@ -4,7 +4,7 @@ import { Profile } from "@/types";
 export const profile: Profile = {
   name: "Rámon Jiménez",
   role: "Software Engineer",
-  bio: "With over 16 years of experience, I specialize in building, implementing, and integrating digital systems that help businesses work smarter and grow.",
+  bio: "I specialize in building, implementing, and integrating SaaS solutions that help businesses operate more efficiently and grow strategically.",
   email: "ramonjmx@gmail.com",
   avatar: "https://avatars.githubusercontent.com/u/1979671?v=4",
   socialLinks: {
