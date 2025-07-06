@@ -6,7 +6,7 @@ export const projects: Project[] = [
     id: "1",
     title: "Startup Ideas & Projects Portfolio",
     description: "A single page to showcase all your innovative startup ideas and projects.",
-    image: "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg",
+    image: "https://workana.s3.amazonaws.com/portfolios/gi/a46f834b737270d0385ae883abf43e14/Screenshot20250706at15205am.png",
     tags: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
     link: "https://portfolio-eta-lake.vercel.app/",
     github: "https://github.com/ramonjmz/portfolio",
