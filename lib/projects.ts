@@ -93,7 +93,7 @@ export const projects: Project[] = [
     ],
     link: "https://example.com/weather",
     github: "https://github.com/example/weather",
-    featured: false,
+    featured: true,
     createdAt: new Date("2023-05-20"),
   },
   {
