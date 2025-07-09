@@ -81,6 +81,23 @@ export const projects: Project[] = [
   },
   {
     id: "8",
+    "title": "Master Classes & Bootcamp Landing Page",
+    "description": "A high-converting landing page to promote your master classes and bootcamps. Capture leads securely with API or Google Sheets integration, plus reCAPTCHA protection.",
+    image: "https://images.pexels.com/photos/5921410/pexels-photo-5921410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "tags": [
+      "Next.js",
+      "Tailwind CSS",
+      "Google Sheets API",
+      "Custom API Integration",
+      "reCAPTCHA",
+    ],
+    link: "https://example.com/weather",
+    github: "https://github.com/example/weather",
+    featured: false,
+    createdAt: new Date("2023-05-20"),
+  },
+  {
+    id: "9",
     title: "Your Instant Personal Resume Website",
     description: "Create a professional resume website with your own domain in minutes.",
     image: "https://images.pexels.com/photos/5921410/pexels-photo-5921410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -91,7 +108,7 @@ export const projects: Project[] = [
     createdAt: new Date("2023-05-20"),
   },
   {
-    id: "9",
+    id: "10",
     title: "Social Media Dashboard",
     description: "A dashboard for tracking social media metrics and engagement.",
     image: "https://images.pexels.com/photos/3194519/pexels-photo-3194519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
