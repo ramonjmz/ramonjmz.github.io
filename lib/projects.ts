@@ -19,7 +19,7 @@ export const projects: Project[] = [
     description: "Easily track your blood pressure and glucose levels through a personalized dashboard, accessible anytime from any device.",
     image: "https://workana.s3.amazonaws.com/portfolios/su/d01453155e979f2944dbe9a737e1f0a3/Screenshot20250711at124013am.png",
     tags: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
-    link: "https://gamehub-psi-taupe.vercel.app/",
+    link: "https://v0-health-monitoring-app-virid.vercel.app/",
     github: "https://github.com/ramonjmz/portfolio",
     featured: true,
     createdAt: new Date("2023-01-15"),
