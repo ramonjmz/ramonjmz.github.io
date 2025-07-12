@@ -18,6 +18,7 @@ export type Profile = {
   avatar: string;
   socialLinks: {
     twitter?: string;
+    youtube?: string;
     github?: string;
     linkedin?: string;
     instagram?: string;

@@ -9,9 +9,10 @@ import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/theme-toggle';
 import {
   GitHubIcon,
-  TwitterIcon,
+  XIcon,
   LinkedInIcon,
   InstagramIcon,
+  YouTubeIcon,
 } from '@/components/social-icons';
 import { ContactDialog } from '@/components/contact-dialog';
 import { ProjectCard } from '@/components/project-card';
@@ -83,7 +84,17 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <TwitterIcon className="h-5 w-5" />
+                <XIcon className="h-5 w-5" />
+              </a>
+            )}
+            {profile.socialLinks.youtube && (
+              <a
+                href={profile.socialLinks.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <YouTubeIcon className="h-5 w-5" />
               </a>
             )}
             {profile.socialLinks.github && (

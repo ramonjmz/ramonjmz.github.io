@@ -9,6 +9,7 @@ export const profile: Profile = {
   avatar: "https://avatars.githubusercontent.com/u/1979671?v=4",
   socialLinks: {
     twitter: "https://x.com/ramonjmz",
+    youtube: "https://youtube.com/@ramonjmz",
     github: "https://github.com/ramonjmz",
     linkedin: "https://www.linkedin.com/in/ramonjmz/",
     instagram: "https://www.instagram.com/ramonjmz",
