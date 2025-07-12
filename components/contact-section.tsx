@@ -20,7 +20,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { GitHubIcon, TwitterIcon, LinkedInIcon } from "@/components/social-icons";
+import { GitHubIcon, XIcon, LinkedInIcon } from "@/components/social-icons";
 import { Profile } from "@/types";
 
 const formSchema = z.object({
@@ -130,8 +130,8 @@ export function ContactSection({ profile }: ContactSectionProps) {
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      <TwitterIcon className="h-5 w-5" />
-                      <span className="sr-only">Twitter</span>
+                      <XIcon className="h-5 w-5" />
+                      <span className="sr-only">X (Twitter)</span>
                     </a>
                   )}
                   {profile.socialLinks.github && (

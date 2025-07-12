@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GitHubIcon, TwitterIcon, LinkedInIcon } from "@/components/social-icons";
+import { GitHubIcon, XIcon, LinkedInIcon } from "@/components/social-icons";
 import { Container } from "@/components/ui/container";
 
 export function Footer() {
@@ -23,8 +23,8 @@ export function Footer() {
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              <TwitterIcon className="h-5 w-5" />
-              <span className="sr-only">Twitter</span>
+              <XIcon className="h-5 w-5" />
+              <span className="sr-only">X (Twitter)</span>
             </Link>
             <Link 
               href="https://github.com" 
