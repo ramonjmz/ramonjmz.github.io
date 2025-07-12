@@ -25,6 +25,10 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const featuredProjects = projects.filter((project) => project.featured);
 
+  const handleSubscribe = () => {
+    window.open('https://ramonjmz.wordpress.com/subscribers', '_blank');
+  };
+
   return (
 <div className="min-h-screen bg-background flex flex-col sm:flex-row">
 <ThemeToggle />
@@ -67,14 +71,16 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
             <h3 className="text-xl font-semibold">
               Check out my <a href="https://ramonjmz.wordpress.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">blog</a> and subscribe.
             </h3>
-            <form className="flex flex-col sm:flex-row gap-2">
+            <div className="flex flex-col sm:flex-row gap-2">
               <input
                 type="email"
                 placeholder="Enter your email"
                 className="border rounded-md px-4 py-2 w-full sm:w-auto"
               />
-              <Button type="submit">Subscribe</Button>
-            </form>
+              <Button onClick={handleSubscribe}>
+                Subscribe
+              </Button>
+            </div>
           </div>
 
           <div className="space-y-4 mb-8">
