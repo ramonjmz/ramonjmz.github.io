@@ -91,7 +91,7 @@ export const projects: Project[] = [
       "Custom API Integration",
       "reCAPTCHA",
     ],
-    link: "https://vercel.com/ramonjmx-8823s-projects/bootcamp-landing-page",
+    link: "https://bootcamp-landing-page-gold.vercel.app/",
     github: "https://github.com/example/weather",
     featured: true,
     createdAt: new Date("2023-05-20"),
