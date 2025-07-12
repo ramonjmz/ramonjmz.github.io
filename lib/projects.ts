@@ -83,7 +83,7 @@ export const projects: Project[] = [
     id: "8",
     "title": "Master Classes & Bootcamp Landing Page",
     "description": "A high-converting landing page to promote your master classes and bootcamps. Capture leads securely with API or Google Sheets integration, plus reCAPTCHA protection.",
-    image: "https://images.pexels.com/photos/5921410/pexels-photo-5921410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "https://workana.s3.amazonaws.com/portfolios/sz/76c2afd52e5a36deab8edcafc54c526f/Screenshot20250711at104010pm.png",
     "tags": [
       "Next.js",
       "Tailwind CSS",
@@ -91,7 +91,7 @@ export const projects: Project[] = [
       "Custom API Integration",
       "reCAPTCHA",
     ],
-    link: "https://example.com/weather",
+    link: "https://vercel.com/ramonjmx-8823s-projects/bootcamp-landing-page",
     github: "https://github.com/example/weather",
     featured: true,
     createdAt: new Date("2023-05-20"),
