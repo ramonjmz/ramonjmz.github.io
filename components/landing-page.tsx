@@ -25,10 +25,6 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const featuredProjects = projects.filter((project) => project.featured);
 
-  const handleSubscribe = () => {
-    window.open('https://ramonjmz.wordpress.com/subscribers', '_blank');
-  };
-
   return (
 <div className="min-h-screen bg-background flex flex-col sm:flex-row">
 <ThemeToggle />
@@ -46,9 +42,9 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
         
         </div>
 
-        <div className="flex-1 flex flex-col items-start">
+        <div className="h-screen flex flex-col items-start justify-center overflow-y-auto">
 
-          <div className="w-48 h-48 rounded-full overflow-hidden mb-8">
+          <div className="w-48 h-48 rounded-full overflow-hidden mb-8 flex justify-center items-center mx-auto">
             <img
               src={profile.avatar}
               alt={profile.name}
@@ -60,7 +56,6 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
           <p className="text-xl text-muted-foreground mb-6">{profile.role}</p>
 
           <div className="space-y-6 mb-8">
-            <h3 className="text-xl font-semibold">About Me</h3>
             <p className="text-muted-foreground leading-relaxed">
               {profile.bio}
             </p>
@@ -68,36 +63,17 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
 
           {/* Subscription Form */}
           <div className="space-y-4 mb-8">
-            <h3 className="text-xl font-semibold">
-              Check out my <a href="https://ramonjmz.wordpress.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">blog</a> and subscribe.
-            </h3>
-            <div className="flex flex-col sm:flex-row gap-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="border rounded-md px-4 py-2 w-full sm:w-auto"
-              />
-              <Button onClick={handleSubscribe}>
-                Subscribe
-              </Button>
-            </div>
+            <p className="text-xl font-semibold">
+              Check out my <a href="https://ramonjmz.wordpress.com/" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-primary underline">blog</a> and <a href="https://ramonjmz.wordpress.com/subscribers" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-primary underline">subscribe</a>
+            </p>
           </div>
 
-          <div className="space-y-4 mb-8">
+          {/* <div className="space-y-4 mb-8">
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin className="h-4 w-4" />
               <span>México</span>
             </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Mail className="h-4 w-4" />
-              <a
-                href={`mailto:${profile.email}`}
-                className="hover:text-primary"
-              >
-                {profile.email}
-              </a>
-            </div>
-          </div>
+          </div> */}
 
           <div className="flex gap-4 mb-8">
             {profile.socialLinks.twitter && (
