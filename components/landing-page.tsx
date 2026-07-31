@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin, DownloadIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 import { Profile, Project } from '@/types';
@@ -45,7 +45,7 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
 
         <div className="h-screen flex flex-col items-start justify-center overflow-y-auto">
 
-          <div className="w-48 h-48 rounded-full overflow-hidden mb-8 flex justify-center items-center mx-auto">
+          <div className="w-48 h-48 shrink-0 rounded-full overflow-hidden mb-8 flex justify-center items-center mx-auto">
             <img
               src={profile.avatar}
               alt={profile.name}
@@ -129,9 +129,25 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
             )}
           </div>
 
-          <Button size="lg" onClick={() => setIsContactOpen(true)}>
-            Contact Me
-          </Button>
+          <div className="flex flex-wrap gap-4">
+            <Button size="lg" onClick={() => setIsContactOpen(true)}>
+              Contact Me
+            </Button>
+
+            {profile.resume && (
+              <Button size="lg" variant="outline" asChild>
+                <a
+                  href={profile.resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center"
+                >
+                  <DownloadIcon className="mr-2 h-4 w-4" />
+                  Download Resume
+                </a>
+              </Button>
+            )}
+          </div>
         </div>
       </motion.div>
 
