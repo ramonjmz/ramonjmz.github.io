@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 
@@ -27,10 +28,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
     >
       <Card className="overflow-hidden h-full flex flex-col">
         <div className="aspect-video relative overflow-hidden">
-          <img
+          <Image
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            fill
+            sizes="(max-width: 768px) 100vw, 400px"
+            loading="lazy"
+            className="object-cover transition-transform duration-300 hover:scale-105"
           />
         </div>
         <CardHeader className="flex-none">

@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Mail, MapPin, DownloadIcon } from 'lucide-react';
+import Image from 'next/image';
+import { DownloadIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 import { Profile, Project } from '@/types';
@@ -36,24 +37,27 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className="w-full sm:w-1/3 p-4 sm:p-12 flex sm:flex-col sm:overflow-y-auto sm:h-screen"
+        className="w-full sm:w-1/3 p-4 sm:p-6 flex flex-col sm:overflow-y-auto sm:h-screen"
         >
         <div className="flex justify-between items-center mb-12">
           {/* <h1 className="font-bold text-xl">Portfolio</h1> */}
-        
+
         </div>
 
         <div className="h-screen flex flex-col items-start justify-center overflow-y-auto">
 
-          <div className="w-48 h-48 shrink-0 rounded-full overflow-hidden mb-8 flex justify-center items-center mx-auto">
-            <img
+          <div className="relative w-48 h-48 shrink-0 rounded-full overflow-hidden mb-8 flex justify-center items-center mx-auto">
+            <Image
               src={profile.avatar}
               alt={profile.name}
-              className="w-full h-full object-cover"
+              fill
+              sizes="192px"
+              priority
+              className="object-cover"
             />
           </div>
 
-          <h2 className="text-4xl font-bold mb-2">{profile.name}</h2>
+          <h1 className="text-4xl font-bold mb-2">{profile.name}</h1>
           <p className="text-xl text-muted-foreground mb-6">{profile.role}</p>
 
           <div className="space-y-6 mb-8">
@@ -82,7 +86,8 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
                 href={profile.socialLinks.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label={`${profile.name} on X (Twitter)`}
+                className="text-muted-foreground hover:text-primary transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               >
                 <XIcon className="h-5 w-5" />
               </a>
@@ -92,7 +97,8 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
                 href={profile.socialLinks.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label={`${profile.name} on YouTube`}
+                className="text-muted-foreground hover:text-primary transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               >
                 <YouTubeIcon className="h-5 w-5" />
               </a>
@@ -102,7 +108,8 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
                 href={profile.socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label={`${profile.name} on GitHub`}
+                className="text-muted-foreground hover:text-primary transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               >
                 <GitHubIcon className="h-5 w-5" />
               </a>
@@ -112,7 +119,8 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
                 href={profile.socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label={`${profile.name} on LinkedIn`}
+                className="text-muted-foreground hover:text-primary transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               >
                 <LinkedInIcon className="h-5 w-5" />
               </a>
@@ -122,7 +130,8 @@ export function LandingPage({ profile, projects }: LandingPageProps) {
                 href={profile.socialLinks.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label={`${profile.name} on Instagram`}
+                className="text-muted-foreground hover:text-primary transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               >
                 <InstagramIcon className="h-5 w-5" />
               </a>

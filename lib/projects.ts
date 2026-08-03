@@ -119,6 +119,17 @@ export const projects: Project[] = [
     createdAt: new Date("2023-05-20"),
   },
   {
+    id: "12",
+    title: "Talky English Tutor",
+    description: "An AI-powered English tutor available 24/7 via WhatsApp, helping Spanish speakers build conversational fluency with personalized plans, spaced repetition, and real-time correction.",
+    image: "/projects/talky-english-tutor.jpg",
+    tags: ["AI", "WhatsApp API", "Next.js", "Tailwind CSS"],
+    link: "https://talky.com.mx/",
+    github: "https://github.com/ramonjmz",
+    featured: true,
+    createdAt: new Date("2026-07-30"),
+  },
+  {
     id: "11",
     title: "Social Media Dashboard",
     description: "A dashboard for tracking social media metrics and engagement.",

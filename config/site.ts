@@ -1,9 +1,11 @@
 import { SiteConfig, NavItem } from "@/types";
 
 export const siteConfig: SiteConfig = {
-  name: "Portfolio SaaS",
-  description: "A customizable portfolio SaaS application",
-  url: "https://portfolio-saas.com",
+  name: "Ramón Jiménez",
+  description:
+    "Ramón Jiménez — Senior Software Engineer | CRM & AI Integration Specialist. I build, implement, and integrate SaaS and AI-powered solutions that help businesses operate more efficiently and grow strategically.",
+  url: "https://ramonjmz.github.io",
+  ogImage: "https://avatars.githubusercontent.com/u/1979671?v=4",
 };
 
 export const navItems: NavItem[] = [

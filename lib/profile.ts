@@ -24,7 +24,7 @@ export const profile: Profile = {
     "MongoDB",
     "PostgreSQL",
   ],
-  resume: "https://ramonjmz.wordpress.com/wp-content/uploads/2026/07/ramon_jimenez_cv_es.pdf",
+  resume: "https://ramonjmz.wordpress.com/wp-content/uploads/2026/07/ramon_jimenez_cv_en.pdf",
 };
 
 export function getProfile(): Profile {
