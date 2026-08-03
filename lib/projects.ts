@@ -8,7 +8,7 @@ export const projects: Project[] = [
     description: "A single page to showcase all your innovative startup ideas and projects.",
     image: "https://workana.s3.amazonaws.com/portfolios/gi/a46f834b737270d0385ae883abf43e14/Screenshot20250706at15205am.png",
     tags: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
-    link: "https://portfolio-eta-lake.vercel.app/",
+    link: "https://v0-portfolio-landing.vercel.app/",
     github: "https://github.com/ramonjmz/portfolio",
     featured: true,
     createdAt: new Date("2023-01-15"),
